@@ -32,11 +32,7 @@ namespace DiceRoller
                             }
                             else if (RollResult == 10)
                             {
-                                Successes = Successes + 1;
-                                if (cbReroll.Checked == true)
-                                {
-                                    i--;
-                                }
+                                Successes = Successes + 2;
                             }
                             else if (RollResult >= Difficulty)
                             {
