@@ -107,17 +107,6 @@
             lblResult.Size = new Size(0, 31);
             lblResult.TabIndex = 6;
             // 
-            // cbReroll
-            // 
-            cbReroll.AutoSize = true;
-            cbReroll.Location = new Point(141, 65);
-            cbReroll.Margin = new Padding(4, 5, 4, 5);
-            cbReroll.Name = "cbReroll";
-            cbReroll.Size = new Size(90, 24);
-            cbReroll.TabIndex = 7;
-            cbReroll.Text = "Reroll 10";
-            cbReroll.UseVisualStyleBackColor = true;
-            // 
             // frmD10
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
