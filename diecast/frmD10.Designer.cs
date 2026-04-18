@@ -29,33 +29,32 @@ namespace
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmD10));
-            lblDiePool = new Label();
-            tbDiePool = new TextBox();
+            lblDice = new Label();
+            tbDice = new TextBox();
             lblDifficulty = new Label();
             tbDifficulty = new TextBox();
             btnRoll = new Button();
             lblSuccesses = new Label();
             lblResult = new Label();
-            cbReroll = new CheckBox();
             SuspendLayout();
             // 
-            // lblDiePool
+            // lblDice
             // 
-            lblDiePool.AutoSize = true;
-            lblDiePool.Location = new Point(16, 25);
-            lblDiePool.Margin = new Padding(4, 0, 4, 0);
-            lblDiePool.Name = "lblDiePool";
-            lblDiePool.Size = new Size(65, 20);
-            lblDiePool.TabIndex = 0;
-            lblDiePool.Text = "Die Pool";
+            lblDice.AutoSize = true;
+            lblDice.Location = new Point(16, 25);
+            lblDice.Margin = new Padding(4, 0, 4, 0);
+            lblDice.Name = "lblDice";
+            lblDice.Size = new Size(65, 20);
+            lblDice.TabIndex = 0;
+            lblDice.Text = "Dice";
             // 
-            // tbDiePool
+            // tbDice
             // 
-            tbDiePool.Location = new Point(87, 20);
-            tbDiePool.Margin = new Padding(4, 5, 4, 5);
-            tbDiePool.Name = "tbDiePool";
-            tbDiePool.Size = new Size(33, 27);
-            tbDiePool.TabIndex = 1;
+            tbDice.Location = new Point(87, 20);
+            tbDice.Margin = new Padding(4, 5, 4, 5);
+            tbDice.Name = "tbDice";
+            tbDice.Size = new Size(33, 27);
+            tbDice.TabIndex = 1;
             // 
             // lblDifficulty
             // 
@@ -112,14 +111,13 @@ namespace
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(253, 148);
-            Controls.Add(cbReroll);
             Controls.Add(lblResult);
             Controls.Add(lblSuccesses);
             Controls.Add(btnRoll);
             Controls.Add(tbDifficulty);
             Controls.Add(lblDifficulty);
-            Controls.Add(tbDiePool);
-            Controls.Add(lblDiePool);
+            Controls.Add(tbDice);
+            Controls.Add(lblDice);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4, 5, 4, 5);
@@ -137,13 +135,12 @@ namespace
 
         #endregion
 
-        private System.Windows.Forms.Label lblDiePool;
-        private System.Windows.Forms.TextBox tbDiePool;
+        private System.Windows.Forms.Label lblDice;
+        private System.Windows.Forms.TextBox tbƒ;
         private System.Windows.Forms.Label lblDifficulty;
         private System.Windows.Forms.TextBox tbDifficulty;
         private System.Windows.Forms.Button btnRoll;
         private System.Windows.Forms.Label lblSuccesses;
         private System.Windows.Forms.Label lblResult;
-        private System.Windows.Forms.CheckBox cbReroll;
     }
 }

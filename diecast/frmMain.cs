@@ -17,7 +17,7 @@ namespace diecast
         string LeftValue = "";
         string RightValue = "";
 
-        private void RollDice(int DieType)
+        private void QuickRoll(int DieType)
         {
             Random RollRandom = new Random();
             int RollResult = RollRandom.Next(DieType) + 1;
@@ -27,37 +27,37 @@ namespace diecast
 
         private void btn1d4_Click(object sender, EventArgs e)
         {
-            RollDice(4);
+            QuickRoll(4);
         }
 
         private void btn1d6_Click(object sender, EventArgs e)
         {
-            RollDice(6);
+            QuickRoll(6);
         }
 
         private void btn1d8_Click(object sender, EventArgs e)
         {
-            RollDice(8);
+            QuickRoll(8);
         }
 
         private void btn1d10_Click(object sender, EventArgs e)
         {
-            RollDice(10);
+            QuickRoll(10);
         }
 
         private void btn1d12_Click(object sender, EventArgs e)
         {
-            RollDice(12);
+            QuickRoll(12);
         }
 
         private void btn1d20_Click(object sender, EventArgs e)
         {
-            RollDice(20);
+            QuickRoll(20);
         }
 
         private void btn1d100_Click(object sender, EventArgs e)
         {
-            RollDice(100);
+            QuickRoll(100);
         }
 
         private void SetRight(int ButtonValue)

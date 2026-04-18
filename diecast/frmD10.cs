@@ -12,18 +12,18 @@ namespace diecast
 
         private void btnRoll_Click(object sender, EventArgs e)
         {
-            if (tbDiePool.Text != "" && tbDifficulty.Text != "")
+            if (tbDice.Text != "" && tbDifficulty.Text != "")
             {
                 try
                 {
-                    if (int.Parse(tbDiePool.Text) < 100 && int.Parse(tbDifficulty.Text) < 100)
+                    if (int.Parse(tbDice.Text) < 100 && int.Parse(tbDifficulty.Text) < 100)
                     {
-                        int DiePool = int.Parse(tbDiePool.Text);
+                        int Dice = int.Parse(tbDice.Text);
                         int Difficulty = int.Parse(tbDifficulty.Text);
                         int Successes = 0;
                         int RollResult;
                         Random RollValue = new Random();
-                        for (int i = 0; i < DiePool; i++)
+                        for (int i = 0; i < Dice; i++)
                         {
                             RollResult = RollValue.Next(10) + 1;
                             if (RollResult == 1)
@@ -61,10 +61,9 @@ namespace diecast
 
         private void frmD10_Load(object sender, EventArgs e)
         {
-            this.tbDiePool.Text = "";
+            this.tbDice.Text = "";
             this.tbDifficulty.Text = "";
             this.lblResult.Text = "";
-            this.cbReroll.Checked = false;
         }
     }
 }
