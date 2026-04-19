@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "diecast": {
+      "commandName": "Project",
+      "nativeDebugging": false
+    }
+  }
+}
