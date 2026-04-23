@@ -243,20 +243,9 @@ namespace makidice
             btn9.UseVisualStyleBackColor = true;
             btn9.Click += btn9_Click;
             // 
-            // btn0
-            // 
-            btn0.Location = new Point(139, 152);
-            btn0.Margin = new Padding(4, 5, 4, 5);
-            btn0.Name = "btn0";
-            btn0.Size = new Size(67, 35);
-            btn0.TabIndex = 17;
-            btn0.Text = "0";
-            btn0.UseVisualStyleBackColor = true;
-            btn0.Click += btn0_Click;
-            // 
             // btnD
             // 
-            btnD.Location = new Point(213, 152);
+            btnD.Location = new Point(139, 152);
             btnD.Margin = new Padding(4, 5, 4, 5);
             btnD.Name = "btnD";
             btnD.Size = new Size(67, 35);
@@ -264,6 +253,17 @@ namespace makidice
             btnD.Text = "d";
             btnD.UseVisualStyleBackColor = true;
             btnD.Click += btnD_Click;
+            // 
+            // btn0
+            // 
+            btn0.Location = new Point(213, 152);
+            btn0.Margin = new Padding(4, 5, 4, 5);
+            btn0.Name = "btn0";
+            btn0.Size = new Size(67, 35);
+            btn0.TabIndex = 17;
+            btn0.Text = "0";
+            btn0.UseVisualStyleBackColor = true;
+            btn0.Click += btn0_Click;
             // 
             // btnRoll
             // 
