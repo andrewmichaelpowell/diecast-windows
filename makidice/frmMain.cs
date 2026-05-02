@@ -12,6 +12,7 @@ namespace makidice
         {
             InitializeComponent();
         }
+
         int Side = 1;
         int Reset = 1;
         string LeftValue = "";
@@ -19,9 +20,9 @@ namespace makidice
 
         private void QuickRoll(int DieType)
         {
-            Random RollRandom = new Random();
-            int RollResult = RollRandom.Next(DieType) + 1;
-            this.lblResult.Text = RollResult.ToString();
+            Random Roll = new Random();
+            int Result = Roll.Next(DieType) + 1;
+            this.lblResult.Text = Result.ToString();
 
         }
 
@@ -121,13 +122,13 @@ namespace makidice
             {
                 int LeftValueInt = int.Parse(LeftValue);
                 int RightValueInt = int.Parse(RightValue);
-                int RollResult = 0;
+                int Result = 0;
                 Random RollValue = new Random();
                 for (int i = 0; i < LeftValueInt; i++)
                 {
-                    RollResult = RollResult + RollValue.Next(RightValueInt) + 1;
+                    Result = Result + RollValue.Next(RightValueInt) + 1;
                 }
-                this.lblResult.Text = RollResult.ToString();
+                this.lblResult.Text = Result.ToString();
                 Side = 1;
                 Reset = 1;
 

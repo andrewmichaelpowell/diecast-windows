@@ -21,20 +21,20 @@ namespace makidice
                         int Dice = int.Parse(tbDice.Text);
                         int Difficulty = int.Parse(tbDifficulty.Text);
                         int Successes = 0;
-                        int RollResult;
-                        Random RollValue = new Random();
+                        int Result;
+                        Random Roll = new Random();
                         for (int i = 0; i < Dice; i++)
                         {
-                            RollResult = RollValue.Next(10) + 1;
-                            if (RollResult == 1)
+                            Result = Roll.Next(10) + 1;
+                            if (Result == 1)
                             {
                                 Successes = Successes - 1;
                             }
-                            else if (RollResult == 10)
+                            else if (Result == 10)
                             {
                                 Successes = Successes + 2;
                             }
-                            else if (RollResult >= Difficulty)
+                            else if (Result >= Difficulty)
                             {
                                 Successes = Successes + 1;
                             }
