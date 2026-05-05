@@ -18,10 +18,10 @@ namespace makidice
         string LeftValue = "";
         string RightValue = "";
 
-        private void QuickRoll(int DieType)
+        private void QuickRoll(int DiceType)
         {
             Random Roll = new Random();
-            int Result = Roll.Next(DieType) + 1;
+            int Result = Roll.Next(DiceType) + 1;
             this.lblResult.Text = Result.ToString();
 
         }
